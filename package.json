@@ -1,0 +1,36 @@
+{
+  "name": "riot-api",
+  "version": "0.1.0",
+  "description": "riot api client written in nodejs that handle rate limiting",
+  "main": "dist/Riot.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
+  },
+  "author": "Bowden Kelly",
+  "license": "MIT",
+  "scripts": {
+    "serve": "nodemon src/index.ts",
+    "debug": "nodemon --config nodemon-debug.json src/index.ts",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "axios": "^0.18.0",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^9.4.6",
+    "@types/winston": "^2.3.7",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.1",
+    "jest": "^22.0.4",
+    "nodemon": "^1.18.8",
+    "ts-jest": "^22.0.4",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}
