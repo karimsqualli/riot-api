@@ -1,13 +1,14 @@
 {
-  "name": "riot-api",
-  "version": "0.1.0",
+  "name": "@karimsqualli96/riot-api",
+  "version": "0.1.2",
   "description": "riot api client written in nodejs that handle rate limiting",
   "main": "dist/Riot.js",
+  "types": "dist/Riot.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
+    "url": "https://github.com/karimsqualli/riot-api"
   },
-  "author": "Bowden Kelly",
+  "author": "Karim Squalli",
   "license": "MIT",
   "scripts": {
     "serve": "nodemon src/index.ts",
