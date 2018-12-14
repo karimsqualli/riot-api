@@ -1,9 +1,10 @@
 {
   "name": "@karimsqualli96/riot-api",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "riot api client written in nodejs that handle rate limiting",
   "main": "dist/Riot.js",
   "types": "dist/Riot.d.ts",
+  "files": ["dist/**/*"],
   "repository": {
     "type": "git",
     "url": "https://github.com/karimsqualli/riot-api"

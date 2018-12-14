@@ -1,14 +1,19 @@
-import axios from 'axios';
+import axios, {AxiosInstance} from 'axios';
 
 export class SummonersEndpoint {
 
 
-    private baseRequest = axios.create({
-        baseURL: 'https://euw1.api.riotgames.com/lol/summoner/v3/summoners/',
-        headers: {
-            "X-Riot-Token": "RGAPI-5e640cf1-a8b8-43df-b97f-f64b2be67005",
-        }
-    });
+    private baseRequest: AxiosInstance;
+
+    constructor(apiKey: string) {
+
+        this.baseRequest = axios.create({
+            baseURL: 'https://euw1.api.riotgames.com//lol/league/v3/',
+            headers: {
+                "X-Riot-Token": apiKey,
+            }
+        });
+    }
 
     getByName(name: string): Promise<any> {
         return this.baseRequest.get(`by-name/${name}`)
